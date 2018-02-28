@@ -1,0 +1,87 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-width: 320px;
+}
+
+a, h2, .header-text {
+	color: #2d3c49;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #02b3e4;
+}
+
+h1 {
+	color: #7d97ad;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+p {
+	color: black;
+	font-size: 14px;
+	text-align: justify;
+}
+
+ul {
+	display: inline-flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin: auto;
+	padding: 20px 50px;
+}
+
+/* ----------------------  H E A D E R   -----------------------*/
+
+header {
+	border-bottom: 3px solid #7d97ad;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	max-height: 140px;
+	width: 100%;
+}
+
+.header-text, .logo {
+	padding: 20px;
+}
+
+.header-text {
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.header-title {
+	font-size: 50px;
+}
+
+.job-title {
+	font-size: 20px;
+}
+
+
+/* -------------------------  M A I N -------------------------  */
+.work-description {
+	padding: 0 10px;
+}
+
+
+/*  -------------------- F O O T E R ----------------------------  */
+
+footer {
+	border-top: 2px solid #7d97ad;
+	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 30px;
+	width: 100%;
+}
