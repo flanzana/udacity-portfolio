@@ -1,0 +1,174 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	min-width: 320px;
+	max-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+a, h2, .header-text {
+	color: #2d3c49;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #02b3e4;
+}
+
+h1 {
+	color: #7d97ad;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+p {
+	color: black;
+	font-size: 14px;
+	text-align: justify;
+}
+
+ul {
+	display: inline-flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	margin: auto;
+	padding: 20px 50px;
+}
+
+/* ----------------------  H E A D E R   -----------------------*/
+header {
+	border-bottom: 3px solid #7d97ad;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	max-height: 140px;
+	width: 100%;
+}
+
+.header-text, .logo {
+	padding: 20px;
+}
+
+.header-text {
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.header-title {
+	font-size: 50px;
+}
+
+.job-title {
+	font-size: 20px;
+}
+
+/* -------------------------  M A I N -------------------------  */
+article {
+	padding: 15px;
+}
+
+.code_img, .work_img {
+	max-width: 100%;
+}
+
+.work-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/*  -------------------- F O O T E R ----------------------------  */
+footer {
+	border-top: 2px solid #7d97ad;
+	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 30px;
+	width: 100%;
+}
+
+/*  -------------------- R E S P O N S I V E ----------------------------  */
+/* Mobile: Google Nexus 5 360x640, Tablet: Apple iPad 768x1024*/
+@media screen and (max-width: 530px) {
+	/* HEADER */
+	.header-title {
+		font-size: 28px;
+	}
+
+	.job-title {
+		font-size: 16px;
+	}
+
+	.logo {
+		height: 50px;
+	}
+
+	.header-text, .logo {
+		padding: 15px 10px;
+	}
+
+	/* MAIN */
+	h1, h2 {
+		margin-bottom: 0;
+	}
+
+	.work-item {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	/* FOOTER */
+	li {
+		padding: 20px 25px;
+	}
+}
+
+@media screen and (min-width: 531px) and (max-width: 800px) {
+	/* HEADER */
+	.header-title {
+		font-size: 44px;
+	}
+
+	/* MAIN */
+	h2 {
+		margin: 0;
+		text-align: left;
+	}
+
+	.work-item {
+		display: flex;
+		flex-direction: row;
+		padding: 10px 0;
+	}
+
+	.work-description {
+		padding: 0 10px;
+	}	
+
+	.work_img {
+		height: 150px;
+		max-width: 220px;
+	}
+}
+
+@media screen and (min-width: 801px) {
+	/* MAIN */
+	.work-item {
+		margin-right: 25px;
+		width: calc((100% - 50px)/3);
+	}
+
+	.work-item:last-of-type {
+		margin-right: 0;
+	}
+}
